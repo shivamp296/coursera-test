@@ -1,9 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+<meta charset="utf-8">
+<title>module2-solution</title>
 </head>
-<body>
+<style >
+	/*basic style*/
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		background-color: white;
+	}
+	h1 {
+		margin: 60px;
+		text-align: center;
+		font-family: Helvetica;
+		font-weight: bold;
+		font-size: 175%;
+	}
+	section {
+		position: relative;
+		padding: 15px;
+		width: 100%;
+	}
+	p {
+		position: relative;
+		clear: right;
+	}
+	div {
+		position: relative;
+		background-color: #ff99cc;
+		border: 1px solid black;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+	}
+	.con1 {
+		float: right;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color: white;
+		
+	}
+	.con2 {
+		float: right;
+		color: white;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color: maroon;
+		
+	}
+	.con3 {
+		color: black;
+		float: right;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color: tomato;
+		
+	}
+	.content {
+		padding: 5px;
+		border: none;
+		background-color: #ff99cc;
+		font-family: Helvetica;
+		color: black;
+		margin: 0px;
+		height: 200px;
+		overflow: auto;
+	}
+	
+	.row {
+		width: 90%;
+	}
+	
+	/*desktop version*/
+	@media (min-width: 992px){
+		.column-lg-4 {
+			float: left;
+			width: 33.33%;
+		}
+	}
+	/*tablet version*/
+	@media (min-width: 768px) and (max-width: 991px){
+		.colmn-md-6 {
+			float: left;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.colmn-md-12 {
+			float: left;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	/*mobile version*/
+	@media (max-width: 767px){
+		.colmn-sm-12 {
+			float: left;
+			width: 100%;
+		}
+	}
+</style>
+<body >
+<h1>! Environment Pollution !</h1>
+	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
+		<div>
+			<p class="con1">Air Pollution</p>
+			<p class="content">
+			 Air pollution occurs when harmful or excessive quantities of substances are introduced into Earth's atmosphere. Sources of air pollution include gases (such as ammonia, carbon monoxide, sulfur dioxide, nitrous oxides, methane and chlorofluorocarbons), particulates (both organic and inorganic), and biological molecules.
+			</p>
+		</div>
+	</section>
+	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
+		<div>
+			<p class="con2">Water Pollution</p>
+			<p class="content">Water pollution is the contamination of water bodies, usually as a result of human activities. Water bodies include for example lakes, rivers, oceans, aquifers and groundwater. Water pollution results when contaminants are introduced into the natural environment. For example, releasing inadequately treated wastewater into natural water bodies can lead to degradation of aquatic ecosystems.</p>
+		</div>
+	</section>
+	<section class="column-lg-4 colmn-md-12 colmn-sm-12">
+	<div>
+		<p class="con3">Land Pollution</p>
+			<p class="content">Land pollution is the deterioration (destruction) of the earth’s land surfaces, often directly or indirectly as a result of man’s activities and their misuse of land resources.
 
+It occurs when waste is not disposed of properly, or can occur when humans throw chemicals onto the soil in the form of pesticides, insecticides and fertilizers during agricultural practices. Exploitation of minerals (mining activities) has also contributed to the destruction of the earth’s surface.</p>
+	</div>
 </body>
 </html>
+
+
